@@ -117,6 +117,7 @@
     left: 0;
     position: absolute;
     padding: 30px;
+    padding-bottom: 70px;
 }
 .userCard {
     display: flex;
