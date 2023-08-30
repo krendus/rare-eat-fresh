@@ -1,6 +1,6 @@
 # Rare Eat Fresh
 
-[Live Link]().
+[Live Link](https://rare-eat-fresh.netlify.app/).
 
 ## How to start the project
 
