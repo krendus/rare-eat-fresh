@@ -1,0 +1,123 @@
+.container {
+    background: var(--secondary, #131313); 
+}
+.wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: var(--wrapper-width);
+    padding: 32px 0;
+}
+.logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo img {
+    height: 60px;
+    width: auto;
+}
+.mid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+.qLink {
+    width: 25%;
+    max-width: 25%;
+}
+.qLink h3 {
+    color: var(--primary, #F36F00); 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.6px; 
+}
+.qLink ul {
+    list-style: none;
+    margin-top: 16px;
+}
+.qLink li {
+    margin-bottom: 16px;
+}
+.qLink a {
+    text-decoration: none;
+    color: var(--white, #F9F9F9); 
+    transition: linear .3s;
+}
+.qLink a:hover {
+    color: var(--primary, #F36F00); 
+}
+.contact {
+    max-width: 320px;
+}
+.contact h3 {
+    color: var(--primary, #F36F00); 
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.6px; 
+    margin-bottom: 16px;
+}
+.contact a {
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white, #F9F9F9); 
+    transition: linear .3s;
+}
+.contact a:hover {
+    color: var(--primary, #F36F00); 
+}
+.contact p {
+    color: var(--white, #F9F9F9); 
+    font-size: 14px;
+}
+.social {
+    display: flex;
+    column-gap: 10px;
+    margin-top: 16px;
+}
+.social a {
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: linear .3s;
+    display: inline-block;
+}
+.social a img {
+    height: 37px;
+    width: 37px;
+}
+.social a:hover {
+    transform: scale(1.08);
+}
+.copy {
+    padding-top: 24px;
+    border-top: 1px solid rgba(190, 188, 189, 0.4);
+    margin-top: 30px;
+}
+.copy p {
+    letter-spacing: 0.48px; 
+    text-align: center;
+    color: #94A3B8;
+}
+@media screen and (max-width: 1000px) {
+    .mid {
+       flex-direction: column;
+       row-gap: 20px;
+    }
+    .qLink {
+        width: 100%;
+        max-width: 100%;
+    }
+    .qLink a {
+        font-size: 14px;
+    }
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    .copy p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,219 @@
+.container {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background: var(--white);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.20); 
+}
+.wrapper {
+    margin: 0 auto;
+    width: 95%;
+    max-width: var(--wrapper-width);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.logo img {
+    height: 85px;
+    width: auto;
+}
+.qLinks {
+    display: flex;
+    column-gap: 32px;
+}
+.qLinks a {
+    text-decoration: none;
+    color: var(--secondary, #131313); 
+    font-size: 14px;
+    font-weight: 500;
+    transition: linear .3s;
+}
+.qLinks a:hover {
+    color: var(--primary, #F36F00); 
+}
+.search {
+    display: flex;
+    width: 350px;
+    border: 1px solid var(--neutral-10, #D0D0D0);
+    background: var(--white, #F9F9F9); 
+    border-radius: 50px; 
+    padding: 10px 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+.search input {
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+}
+.search input::placeholder {
+    color: var(--neutral-40, #626262);
+}
+.search button {
+    height: 16px;
+    width: 16px;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.search button img {
+    height: 16px;
+    width: 16px;
+}
+.right {
+    display: flex;
+    column-gap: 20px;
+}
+.btn {
+    height: 44px;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nBtn {
+    display: none;
+    height: 44px;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.nBtn img {
+    width: 30px;
+    height: 30px;
+}
+.userBtn {
+    border-radius: 100px;
+    border: 1px solid var(--primary, #F36F00);
+    background: rgba(255, 215, 211, 0.30); 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    cursor: pointer;
+}
+.dropdown {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    top: 70px;
+    background: var(--white);
+    height: calc(100vh - 70px);
+    left: 0;
+    position: absolute;
+    padding: 30px;
+}
+.userCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    top: 70px;
+    background: var(--white);
+    height: calc(100vh - 70px);
+    left: 0;
+    position: absolute;
+    padding: 30px;
+}
+.gLinks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.gLinks a {
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    border: none;
+    width: 220px;
+    height: 50px;
+    padding: 16px;
+    color: var(--white, #F9F9F9); 
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center; 
+    border-radius: 30px;
+    background: var(--primary, #F36F00); 
+}
+.dLinks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.dLinks a {
+    text-decoration: none;
+    color: var(--secondary, #131313); 
+    font-size: 16px;
+    font-weight: 500;
+    transition: linear .3s;
+    text-align: center;
+}
+.dLinks a:hover {
+    color: var(--primary, #F36F00); 
+}
+.searchD {
+    display: flex;
+    width: 100%;
+    border: 1px solid var(--neutral-10, #D0D0D0);
+    background: var(--white, #F9F9F9); 
+    border-radius: 50px; 
+    padding: 10px 20px;
+    column-gap: 20px;
+    align-items: center;
+}
+.searchD input {
+    outline: none;
+    background: transparent;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+}
+.searchD input::placeholder {
+    color: var(--neutral-40, #626262);
+}
+.searchD button {
+    height: 16px;
+    width: 16px;
+    outline: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.searchD button img {
+    height: 16px;
+    width: 16px;
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 70px;
+    }
+    .qLinks, .search {
+        display: none;
+    }
+    .logo img {
+        height: 50px;
+        width: auto;
+    }
+    .nBtn {
+        display: block;
+    }
+    .dropdown {
+        display: flex;
+    }
+}
