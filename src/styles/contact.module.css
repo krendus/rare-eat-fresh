@@ -194,6 +194,9 @@
     border-radius: 30px;
     background: var(--primary, #F36F00); 
 }
+.banner button:hover {
+    opacity: 0.8;
+}
 @media screen and (max-width: 1000px) {
     .contact {
         flex-direction: column-reverse;

@@ -152,6 +152,9 @@
     border-radius: 30px;
     background: var(--primary, #F36F00); 
 }
+.gLinks a:hover {
+    opacity: 0.8;
+}
 .dLinks {
     display: flex;
     flex-direction: column;
